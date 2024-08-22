@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: 'mjdb'
+      MYSQL_USER: 'mj'
+      MYSQL_PASSWORD: '1234'
+      MYSQL_ROOT_PASSWORD: '1234'
+    ports:
+      - '3306:3306'
